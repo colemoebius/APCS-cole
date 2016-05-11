@@ -16,9 +16,6 @@ public class TripleDes implements myInterface{
 	String text="";
 	String ciphertext;
 	Scanner reader;
-	byte[] keyBytes;
-	byte[] ivBytes;
-	byte[] input;
 	public TripleDes(){
 		
 	}
@@ -39,7 +36,7 @@ public class TripleDes implements myInterface{
 	public Byte[] encrypt(String plaintext){
 		String left = plaintext.substring(0, plaintext.length()/2);
 		String right = plaintext.substring(plaintext.length()/2, plaintext.length());
-		for(int i = 0; i<16;i++){
+		for(int i = 0; i<plaintext.length();i+=8){
 			
 		}
 		return null;

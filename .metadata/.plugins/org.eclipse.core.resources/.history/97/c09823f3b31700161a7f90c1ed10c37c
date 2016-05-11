@@ -16,9 +16,6 @@ public class TripleDes implements myInterface{
 	String text="";
 	String ciphertext;
 	Scanner reader;
-	byte[] keyBytes;
-	byte[] ivBytes;
-	byte[] input;
 	public TripleDes(){
 		
 	}
