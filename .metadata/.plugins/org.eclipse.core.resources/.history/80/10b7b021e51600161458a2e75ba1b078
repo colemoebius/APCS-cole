@@ -1,0 +1,45 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+import javax.crypto.*;
+import javax.crypto.spec.SecretKeySpec;
+public class TripleDes implements myInterface{
+	//three 56bit keys or one 186 bit key
+	//encrypt --> decrypt --> encrypt
+	// 64 bit block of plaintext
+	//how do i make a key?
+	//should my strings be bytes?
+	//can u use the encrypt methods on java api?
+	//what happens at the mixing part (xor)
+	//help with sbox and pbox(or can i take one online)
+	String text;
+	String ciphertext;
+	String keyString ="4d89g13j4j91j27c582ji69373y788r6";
+	
+	public TripleDes(String plaintext){
+		text = plaintext;
+	}
+	byte[] keyB = new byte[24];
+
+
+	for (int i = 0; i < keyString.length() && i < keyB.length; i++) {
+	keyB[i] = (byte) keyString.charAt(i);
+	}
+
+	// Make the Key
+	SecretKey key = new SecretKeySpec(keyB, "DESede");
+	public String encrypt(String plaintext){
+		String half1 = plaintext.substring(0, plaintext.length()/2);
+		String half2 = plaintext.substring(plaintext.length()/2, plaintext.length());
+		for(int i = 0; i<plaintext.length();i+=8){
+			
+		}
+		return null;
+		
+	}
+	public String decrypt(String plaintext){
+		return null;
+		
+	}
+}

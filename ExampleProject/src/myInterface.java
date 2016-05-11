@@ -1,5 +1,5 @@
 
 public interface myInterface {
-public String encrypt();
-public String decrypt();
+public Byte[] encrypt(String plaintext);
+public String Decrypt(Byte[] ciphertext);
 }

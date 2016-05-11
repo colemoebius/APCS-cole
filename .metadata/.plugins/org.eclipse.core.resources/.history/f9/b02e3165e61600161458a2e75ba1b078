@@ -1,0 +1,13 @@
+
+public class Decrypt implements myInterface{
+	String text;
+	Byte[] ciphertext;
+	String keyString ="4d89g13j4j91j27c582ji69373y788r6";
+	public Decrypt(Byte[] input){
+		
+	}
+	public String decrypt(String plaintext){
+		return null;
+		
+	}
+}
