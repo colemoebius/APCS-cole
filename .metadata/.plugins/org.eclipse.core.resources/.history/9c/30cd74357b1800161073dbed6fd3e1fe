@@ -1,0 +1,16 @@
+
+public class Decrypt47 implements Interface47 {
+
+	@Override
+	public void Read() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public char rotate47(char add47) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

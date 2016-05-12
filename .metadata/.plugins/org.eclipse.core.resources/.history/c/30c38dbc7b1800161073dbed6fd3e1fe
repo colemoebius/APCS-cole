@@ -1,0 +1,24 @@
+
+public class Decrypt47 implements Interface47 {
+	public Decrypt47(){
+		
+	}
+	
+	public void Read() {
+		
+		
+	}
+
+
+	public char rotate47(char add47) {
+		if(add47 != ' '){
+			add47-=47;
+		
+			if(add47 < 33){
+				add47+=94;
+			}
+			}
+		return add47;
+	}
+
+}

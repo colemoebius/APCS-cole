@@ -1,0 +1,7 @@
+
+public interface Interface47 {
+	public void read();
+	public void rotate47();
+	
+	
+}
