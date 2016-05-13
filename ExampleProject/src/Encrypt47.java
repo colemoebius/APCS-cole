@@ -17,7 +17,7 @@ public class Encrypt47 implements Interface47{
 	}
 public void Read(){
 			try {
-			reader = new Scanner(new File("C:\\Users\\moebiusc5097\\Desktop\\input.txt"));
+			reader = new Scanner(new File("C:/Users/moebiusc5097/Desktop/input.txt"));
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

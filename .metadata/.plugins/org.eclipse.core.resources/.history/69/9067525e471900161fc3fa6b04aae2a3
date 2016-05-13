@@ -18,7 +18,7 @@ public class Decrypt47 implements Interface47 {
 public void Read(){
 		
 		try {
-			reader = new Scanner(new File("C:/Users/moebiusc5097/Desktop/encrypted.txt"));
+			reader = new Scanner(new File("C:\\Users\\moebiusc5097\\Desktop\\encrypted.txt"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -54,7 +54,7 @@ public void Write(){
 
 				
 
-				 file = new File("C:/Users/moebiusc5097/Desktop/decrypted.txt");
+				 file = new File("C:\\Users\\moebiusc5097\\Desktop\\decrypted.txt");
 
 				
 				if (!file.exists()) {
