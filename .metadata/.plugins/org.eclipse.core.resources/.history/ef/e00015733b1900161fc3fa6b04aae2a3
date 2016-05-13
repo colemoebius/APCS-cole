@@ -46,7 +46,9 @@ public void Read(){
 		}
 		return plaintext.toString();
 	}
-	
+	public String toString(){
+		return plaintext;
+	}
 
 	
 public void Write(){
@@ -63,7 +65,7 @@ public void Write(){
 
 				FileWriter fw = new FileWriter(file.getAbsoluteFile());
 				BufferedWriter bw = new BufferedWriter(fw);
-				bw.write(plaintext);
+				bw.write(ciphertext);
 				bw.close();
 
 				
@@ -71,10 +73,7 @@ public void Write(){
 				e.printStackTrace();
 			}
 			}
-
-public String toString(){
-	return "Decrypted Text: " + plaintext;
-}
+		
 	}
 
 

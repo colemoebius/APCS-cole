@@ -53,29 +53,24 @@ public String encrypt(){
 	
 }
 public void Write(){
-	try {
+try {
 
-		
+	
 
-		 file = new File("C:/Users/moebiusc5097/Desktop/encrypted.txt");
+	
 
-		
-		if (!file.exists()) {
-			file.createNewFile();
-		}
+ PrintWriter writer = new PrintWriter("encrypted", "UTF-8");
+	writer.println(ciphertext);
+	writer.close();
 
-		FileWriter fw = new FileWriter(file.getAbsoluteFile());
-		BufferedWriter bw = new BufferedWriter(fw);
-		bw.write(ciphertext);
-		bw.close();
+	
+} catch (IOException e) {
+	e.printStackTrace();
+}
+}
 
-		
-	} catch (IOException e) {
-		e.printStackTrace();
-	}
-	}
 public String toString(){
-	return "Encrypted Text: "+ ciphertext;
+	return ciphertext;
 }
 public static void main(String[] args) {
 	Encrypt47 encrypted = new Encrypt47();
@@ -86,7 +81,6 @@ public static void main(String[] args) {
 	Decrypt47 decrypted = new Decrypt47();
 	decrypted.Read();
 	decrypted.decrypt();
-	decrypted.Write();
 	System.out.println(decrypted);
 	
 	

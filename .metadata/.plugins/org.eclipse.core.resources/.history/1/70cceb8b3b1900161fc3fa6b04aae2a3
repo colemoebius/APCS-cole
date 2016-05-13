@@ -72,9 +72,7 @@ public void Write(){
 			}
 			}
 
-public String toString(){
-	return "Decrypted Text: " + plaintext;
-}
+		
 	}
 
 

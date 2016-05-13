@@ -54,7 +54,7 @@ public void Write(){
 
 				
 
-				 file = new File("C:\\Users\\moebiusc5097\\Desktop\\decrypted.txt");
+				 file = new file("C:\\Users\\moebiusc5097\\Desktop\\decrypted.txt");
 
 				
 				if (!file.exists()) {
@@ -73,7 +73,7 @@ public void Write(){
 			}
 
 public String toString(){
-	return "Decrypted Text: " + plaintext;
+	return plaintext;
 }
 	}
 

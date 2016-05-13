@@ -73,7 +73,7 @@ public void Write(){
 			}
 
 public String toString(){
-	return "Decrypted Text: " + plaintext;
+	return file.toString();
 }
 	}
 

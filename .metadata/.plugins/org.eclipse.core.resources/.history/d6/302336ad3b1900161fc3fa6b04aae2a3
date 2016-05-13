@@ -3,7 +3,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 
@@ -53,40 +52,39 @@ public String encrypt(){
 	
 }
 public void Write(){
-	try {
+try {
 
-		
+	
 
-		 file = new File("C:/Users/moebiusc5097/Desktop/encrypted.txt");
+	 file = new File("C:\\Users\\moebiusc5097\\Desktop\\encrypted.txt");
 
-		
-		if (!file.exists()) {
-			file.createNewFile();
-		}
-
-		FileWriter fw = new FileWriter(file.getAbsoluteFile());
-		BufferedWriter bw = new BufferedWriter(fw);
-		bw.write(ciphertext);
-		bw.close();
-
-		
-	} catch (IOException e) {
-		e.printStackTrace();
+	
+	if (!file.exists()) {
+		file.createNewFile();
 	}
-	}
+
+	FileWriter fw = new FileWriter(file.getAbsoluteFile());
+	BufferedWriter bw = new BufferedWriter(fw);
+	bw.write(ciphertext);
+	bw.close();
+
+	
+} catch (IOException e) {
+	e.printStackTrace();
+}
+}
+
 public String toString(){
-	return "Encrypted Text: "+ ciphertext;
+	return ciphertext;
 }
 public static void main(String[] args) {
 	Encrypt47 encrypted = new Encrypt47();
+	Decrypt47 decrypted = new Decrypt47();
 	encrypted.Read();
 	encrypted.encrypt();
-	encrypted.Write();
 	System.out.println(encrypted);
-	Decrypt47 decrypted = new Decrypt47();
 	decrypted.Read();
 	decrypted.decrypt();
-	decrypted.Write();
 	System.out.println(decrypted);
 	
 	
