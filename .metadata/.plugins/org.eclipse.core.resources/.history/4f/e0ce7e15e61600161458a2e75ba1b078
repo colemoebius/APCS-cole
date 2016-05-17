@@ -1,5 +1,0 @@
-
-public interface myInterface {
-public String encrypt(String plaintext);
-public String decrypt(String plaintext);
-}
